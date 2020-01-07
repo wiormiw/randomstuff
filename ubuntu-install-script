@@ -5,5 +5,5 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 sudo systemctl disable apache2 mysql 
 sudo chmod 777 /var/www/html -R
-sudo snap install telegram-desktop pycharm-community
+sudo snap install telegram-desktop && sudo snap install pycharm-community --classic
 sudo snap install android-studio --classic
