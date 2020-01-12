@@ -11,6 +11,9 @@ sudo nano /etc/my.cnf.d/mariadb-server.cnf
 --Edit mariadb server timezone
 ctrl + w mysqld
 character-set-server=utf8
+save
+--set root password
+sudo mysql_secure_installation
 
 ##ADDITIONAL PACKAGE
 sudo dnf install composer nodejs npm
