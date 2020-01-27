@@ -1,9 +1,5 @@
 sudo add-apt-repository ppa:phpmyadmin/ppa
-sudo apt install php libapache2-mod-php php-mysql php-common apache2 mysql-server phpmyadmin nodejs npm composer gnome-tweaks libreoffice zsh curl
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-# Donwload file .zshrc from github then :
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-sudo systemctl disable apache2 mysql 
-sudo chmod 777 /var/www/html -R
+sudo apt install php libapache2-mod-php php-mysql php-common apache2 mysql-server phpmyadmin nodejs npm composer libmysqlclient-dev python3-dev
+sudo chown $USER /var/www/html -R
 sudo snap install telegram-desktop && sudo snap install pycharm-community --classic
 sudo snap install android-studio --classic
