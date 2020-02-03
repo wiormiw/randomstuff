@@ -3,3 +3,11 @@ sudo apt install php libapache2-mod-php php-mysql php-common apache2 mysql-serve
 sudo chown $USER /var/www/html -R
 sudo snap install telegram-desktop && sudo snap install pycharm-community --classic
 sudo snap install android-studio --classic
+
+# UBUNTU DOCK
+gsettings set org.gnome.shell.extensions.dash-to-dock isolate-workspaces true -> for isolate app between workspaces
+gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0.5 -> set dock opacity to 50%
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize' -> minimize apps when click active apps
+
+# HOT CORNER
+gsettings set org.gnome.shell enable-hot-corners true -> enable hot corner
