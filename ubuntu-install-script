@@ -11,3 +11,6 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize' ->
 
 # HOT CORNER
 gsettings set org.gnome.shell enable-hot-corners true -> enable hot corner
+
+#POP OS
+sudo apt-get install ubuntu-restricted-extras ffmpeg
