@@ -4,13 +4,19 @@ sudo chown $USER /var/www/html -R
 sudo snap install telegram-desktop && sudo snap install pycharm-community --classic
 sudo snap install android-studio --classic
 
+# VISUAL CODE UBUNTU
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/
+sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+
 # UBUNTU DOCK
 gsettings set org.gnome.shell.extensions.dash-to-dock isolate-workspaces true -> for isolate app between workspaces
 gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0.5 -> set dock opacity to 50%
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize' -> minimize apps when click active apps
 
-# HOT CORNER
+# HOT CORNER UBUNTU
 gsettings set org.gnome.shell enable-hot-corners true -> enable hot corner
 
 #POP OS
-sudo apt-get install ubuntu-restricted-extras ffmpeg
+sudo apt-get install ubuntu-restricted-extras
+gsettings set org.gnome.desktop.interface enable-hot-corners true
