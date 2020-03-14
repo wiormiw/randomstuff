@@ -1,0 +1,14 @@
+sudo pacman -S yay apache mysql php php-apache phpmyadmin node yarn
+
+#Configure mysql
+sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+
+#copy 3 file at repo and paste in this file
+sudo gedit /etc/httpd/conf/httpd.conf
+sudo gedit /etc/php/php.ini
+sudo gedit /etc/httpd/conf/extra/phpmyadmin.conf
+#change gedit to whatever text editor you want !
+
+#change permissions in http file
+sudo chown $USER /srv/http -R
+
