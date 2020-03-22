@@ -12,3 +12,8 @@ sudo gedit /etc/httpd/conf/extra/phpmyadmin.conf
 #change permissions in http file
 sudo chown $USER /srv/http -R
 
+alias q="exit"
+alias lampp-start="sudo systemctl start httpd mysqld"
+alias lampp-stop="sudo systemctl stop httpd mysqld"
+alias lampp-restart="sudo systemctl restart httpd mysqld"
+alias lampp-stat="systemctl stat httpd mysqld"
